@@ -15,7 +15,8 @@
         <th>Lanzamiento</th>
     </thead>
 
-    <tbody >
+
+    <tbody>
         @foreach (var item in Model)
         {
             <tr>
@@ -23,7 +24,7 @@
                 <td>@item.Duracion</td>
                 <td>@item.Pais</td>
                 <td>@item.Publicacion.ToString("dd/MM/yyyy")</td>
-           </tr>
+            </tr>
         }
     </tbody>
-</tableclass="table>
+</table>

@@ -125,6 +125,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\Alumno.cs" />
     <Compile Include="Models\Pelicula.cs" />
     <Compile Include="Models\OperasBas.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -169,6 +170,8 @@
     <Content Include="Views\CalculosBas\Suma.cshtml" />
     <Content Include="Views\CalculosBas\Operas.cshtml" />
     <Content Include="Views\CalculosBas\MuestraPeliculas.cshtml" />
+    <Content Include="Views\CalculosBas\MuestraPeliculas2.cshtml" />
+    <Content Include="Views\CalculosBas\temporal.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

@@ -3,6 +3,7 @@ using BackEnd_ejemplo1.Services;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.Remoting.Messaging;
 using System.Web;
 using System.Web.Mvc;
 
@@ -47,5 +48,32 @@ namespace BackEnd_ejemplo1.Controllers
             return View(model);
         }
 
+        public ActionResult MuestraPeliculas2()
+        {
+            var peliculaservice = new PeliculasService();
+            var model = peliculaservice.ObtenerPelicula();
+            return View(model);
+
+
+        }
+
+        /*public JsonResult temporal()
+        {
+            var alumno1 = new Alumno() { Nombre = "Juan", Edad = 23 };
+            return Json(alumno1, JsonRequestBehavior.AllowGet);
+              
+        }*/
+
+        public RedirectResult temporal()
+        {
+            return Redirect("https://google.com.mx");
+
+
+        }
+
+        public RedirectToRouteResult temporal2()
+        {
+            return RedirectToAction("index","Home");
+        }
     }
 }
