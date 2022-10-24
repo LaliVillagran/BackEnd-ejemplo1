@@ -1,0 +1,29 @@
+﻿
+@{
+    ViewBag.Tittle = "Operas";
+}
+
+<div class="row">
+    <h2>Operaciones Suma y Resta</h2>
+</div>
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg-6">
+            <br>
+            <form action="/" nethod="post">
+                <input type="text" name="Num1" value="" />
+                <br>
+                <input type="text" name="Num2" value="" />
+                <input type="submit" value="enviar" />
+                <br>
+            </form>
+
+        </div>
+        <div class="col-lg-6">
+            <h1>La suma es:</h1>
+            <h2>@ViewBag.Res</h2>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,28 @@
+﻿@model BackEnd_ejemplo1.Models.OperasBas
+
+@{ 
+    ViewBag.Tittle = "Operas";
+}
+
+<h2>Operas</h2>
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg-6">
+            Zencoding
+            <form action="/" nethod="post">
+                <label for="Num1"> Numero 1</label>
+                <input type="text" name="Num1" value="" />
+                <br>
+                <label for="Num2"> Numero 2</label>
+                <input type="text" name="Num2" value="" />
+                <input type="submit" value="enviar" />
+            </form>
+        </div>
+        <div class="col-lg-6">
+            <h1>La suma es:</h1>
+            <h2>@Model.Res</h2>
+        </div>
+    </div>
+
+
