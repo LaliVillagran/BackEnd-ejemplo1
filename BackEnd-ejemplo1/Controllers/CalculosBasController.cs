@@ -57,14 +57,14 @@ namespace BackEnd_ejemplo1.Controllers
 
         }
 
-        /*public JsonResult temporal()
+        public JsonResult temporal()
         {
             var alumno1 = new Alumno() { Nombre = "Juan", Edad = 23 };
             return Json(alumno1, JsonRequestBehavior.AllowGet);
               
-        }*/
-
-        public RedirectResult temporal()
+        }
+        //hola
+        public RedirectResult temporal1()
         {
             return Redirect("https://google.com.mx");
 

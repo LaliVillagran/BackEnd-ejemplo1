@@ -17,7 +17,7 @@ namespace BackEnd_ejemplo1
                 name: "Default",
                 url: "{controller}/{action}/{id}",
                 //Esta linea es donde se configura la primera vista del menu principal
-                defaults: new { controller = "CalculosBas", action = "Operas", id = UrlParameter.Optional }
+                defaults: new { controller = "Escuela", action = "Index", id = UrlParameter.Optional }
             );
         }
     }
